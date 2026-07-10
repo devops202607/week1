@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: week1
+  namespace: flux-system
+spec:
+  interval: 15m
+  url: https://github.com/devops202607/week1.git
+  ref:
+    branch: main
