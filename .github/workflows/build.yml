@@ -24,8 +24,8 @@ jobs:
 
       - name: Build and push
         run: |
-          docker build -t derifgjg/week1-app:${{ steps.tag.outputs.tag }} \
-            -t derifgjg/week1-app:latest .
+          docker build -f app/Dockerfile -t derifgjg/week1-app:${{ steps.tag.outputs.tag }} \
+            -t derifgjg/week1-app:latest ./app
           docker push derifgjg/week1-app:${{ steps.tag.outputs.tag }}
           docker push derifgjg/week1-app:latest
 
