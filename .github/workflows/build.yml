@@ -29,6 +29,9 @@ jobs:
           docker push derifgjg/week1-app:${{ steps.tag.outputs.tag }}
           docker push derifgjg/week1-app:latest
 
+      - name: Checkout main
+        run: git checkout main
+
       - name: Update deployment.yaml
         run: |
           sed -i "s|image: derifgjg/week1-app:.*|image: derifgjg/week1-app:${{ steps.tag.outputs.tag }}|" k3s/deployment.yaml
