@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: week1-app
-        image: derifgig/week1-app:1.0.0
+        image: derifgjg/week1-app:1.0.0
         ports:
         - containerPort: 8080
 ---
