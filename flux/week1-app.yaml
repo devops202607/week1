@@ -6,6 +6,7 @@ metadata:
 spec:
   interval: 15m
   path: ./k3s
+  targetNamespace: default
   prune: true
   sourceRef:
     kind: GitRepository
