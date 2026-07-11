@@ -1,5 +1,8 @@
 # week1
 
+SITE: <https://week1.wesdxc.work/>
+
+
 ## Initial
 ```
 curl -sfL https://get.k3s.io | sh -
@@ -16,7 +19,7 @@ sudo dpkg -i k9s_linux_amd64.deb
 ```
 
 ## go go
-
+t
 ```
 echo $KUBECONFIG
 
